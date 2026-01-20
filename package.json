@@ -2,6 +2,16 @@
   "name": "crosstalk-mfe",
   "version": "0.1.0",
   "description": "Microfrontend communication library",
+  "author": "kalimuthu-a",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kalimuthu-a/cross-talk.git"
+  },
+  "homepage": "https://github.com/kalimuthu-a/cross-talk#readme",
+  "bugs": {
+    "url": "https://github.com/kalimuthu-a/cross-talk/issues"
+  },
   "keywords": [
     "microfrontend",
     "micro-frontend",
