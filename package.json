@@ -2,7 +2,6 @@
   "name": "cross-talk",
   "version": "0.1.0",
   "description": "Microfrontend communication library",
-  "license": "MIT",
   "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
