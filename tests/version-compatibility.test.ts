@@ -24,9 +24,9 @@ describe("Version Compatibility", () => {
     const bus = new CrossTalk();
     const currentVersion = bus.getApiVersion();
 
-    // Since current version is "0.1.0", versions starting with "0." should be supported
-    // This tests backward compatibility within the same major version (0.x)
-    const isSupported = bus.isVersionSupported("0.0.1");
+    // Since current version is "1.0.0", versions starting with "1." should be supported
+    // This tests backward compatibility within the same major version (1.x)
+    const isSupported = bus.isVersionSupported("1.0.1");
 
     expect(isSupported).toBe(true);
   });

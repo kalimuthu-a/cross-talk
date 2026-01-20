@@ -671,12 +671,12 @@ CrossTalk provides version management to ensure compatibility between different 
 Gets the communication API version of the library.
 
 **Returns:**
-- `string`: The API version string in semantic versioning format (e.g., `"0.1.0"`).
+- `string`: The API version string in semantic versioning format (e.g., `"1.0.0"`).
 
 **Example:**
 ```typescript
 const version = crossTalk.getApiVersion();
-console.log('CrossTalk API version:', version); // "0.1.0"
+console.log('CrossTalk API version:', version); // "1.0.0"
 
 // Use for debugging or logging
 console.log(`Using CrossTalk v${crossTalk.getApiVersion()}`);
@@ -703,7 +703,7 @@ Determines whether a specified API version is supported by this library.
 **Example:**
 ```typescript
 // Check version compatibility
-crossTalk.isVersionSupported('0.1.0'); // true (exact match)
+crossTalk.isVersionSupported('1.0.0'); // true (exact match)
 crossTalk.isVersionSupported('0.2.0'); // true (0.x versions are compatible)
 crossTalk.isVersionSupported('1.0.0'); // false (different major version)
 crossTalk.isVersionSupported('invalid'); // false (invalid format)
@@ -718,7 +718,7 @@ function checkCompatibility(requiredVersion: string) {
   }
 }
 
-checkCompatibility('0.1.0'); // OK
+checkCompatibility('1.0.0'); // OK
 ```
 
 ---

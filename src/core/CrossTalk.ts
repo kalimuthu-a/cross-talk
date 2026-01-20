@@ -7,7 +7,7 @@ import {
 } from "./types";
 
 // API version constant - update this when making breaking changes
-const API_VERSION = "0.1.0";
+const API_VERSION = "1.0.0";
 
 // Declare process as a global variable to avoid TypeScript errors
 declare const process: { env?: { NODE_ENV?: string } } | undefined;
@@ -388,7 +388,7 @@ export class CrossTalk implements ICrossTalk {
    * @returns The API version string (semantic versioning format)
    * @example
    * ```typescript
-   * const version = crossTalk.getApiVersion(); // "0.1.0"
+   * const version = crossTalk.getApiVersion(); // "1.0.0"
    * ```
    */
   getApiVersion(): string {
@@ -406,7 +406,7 @@ export class CrossTalk implements ICrossTalk {
    * - Invalid version formats return false
    * @example
    * ```typescript
-   * crossTalk.isVersionSupported('0.1.0'); // true
+   * crossTalk.isVersionSupported('1.0.0'); // true
    * crossTalk.isVersionSupported('99.0.0'); // false
    * crossTalk.isVersionSupported('invalid'); // false
    * ```
